@@ -12,11 +12,11 @@ body {Font-family: 'Roboto';
       background-color: #ebebeb;
 }
 
-main {
-    background-color: #ebebeb;
-}
 
-header {background-color: #eac926;}
+header {
+    background-color: #eac926;
+    
+}
 
 div.top-header{
     padding: 5%;
@@ -68,7 +68,9 @@ header div.top-header p{
     margin-top: 10px;
 }
 
-.menu{
+
+
+header div.menu{
     border: 1px solid black;
     text-align: center;
     background-color: #1259c3;
@@ -78,6 +80,13 @@ header div.top-header p{
     padding: 9px;
     margin: 20px auto;
     border-radius: 5px;
+    
+}
+
+main {
+    margin: auto;
+    /*background-color: #ebebeb;*/
+    width: 90%;
 }
 
 article div.main-article{
@@ -88,25 +97,28 @@ section.banner img{
     width: 100%;
 }
 
-main{
-    width: 90%;
-}
 
 main section article{
     background-color: #fff;
     width: 100%;
-    margin: auto;
+    margin: 10px;
 
 }
 
 main section article img{
     width: 100%;
-   padding: 20px auto;;
+   padding: auto;
+   border-bottom: 1px solid #ebebeb;
+   
+
 }
+
+
 
 main section article i,
 .discount{
     color: #39b54a;
+    margin-top: 10px;
 }
 
 /* .searchBar .form { */
@@ -190,7 +202,42 @@ footer section article i {
     margin-top:0px;
 }
 
+.ultim {
 
+    margin: 30px 30px;
+}
 
+@media (min-width: 361px) {
+    main section article .description {
+      display: block;
+    }
+  
+    main section article {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  
+    main section div.products {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    main section div.products article {
+      width: 45%;
+    }
+  
+    .price,
+    .discount {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    main section div.products article {
+      width: 22%;
+    }
+  }
 
 
