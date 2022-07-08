@@ -6,6 +6,10 @@
 }
 
 
+img {
+    width: 100%;
+}
+
 body {Font-family: 'Roboto';
       /* background-color: #ebebeb; */
       margin: 0;      
@@ -14,63 +18,49 @@ body {Font-family: 'Roboto';
 
 
 header {
+    display: flex;
     background-color: #eac926;
-    
+    flex-direction: column;
 }
 
 div.top-header{
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo-bar-container{
+    /* border: 3px solid gray; */
+    display: flex;
+    align-items: center;
 }
 
 header div.logo{
-    width: 50%;
+    /* border: 3px solid pink; */
+    display: flex;
+    flex-direction: column;
 }
 
-header div.logo{
-    padding: 10px;
+header div.form{
+    
+    /* border: 3px solid pink; */
+    display: flex;
+    width: 90%;
+    height: 20%;
+    justify-content: center;
 }
 
-header nav{
-    font-size: 12px;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-.p1 {text-align: center;}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 20px;
-}
-
-header div.top-header p{
-    width: 100%;
+.card-container{
+   /*  border: 3px solid gray;  */
     text-align: center;
-    margin-top: 10px;
 }
 
-
+/* header div.smenu{
+    /* border: 3px solid red; */
+   /*  margin-bottom: 20px; */
 
 header div.menu{
+    display: flex;
     border: 1px solid black;
     text-align: center;
     background-color: #1259c3;
@@ -82,6 +72,49 @@ header div.menu{
     border-radius: 5px;
     
 }
+
+header nav{
+    font-size: 12px;
+    display: none;
+}
+
+header ul li{
+     list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.p1 {text-align: center;}
+
+header.form{
+    display: flex;
+}
+
+header .form .input{
+    
+    background-color: #FFF;
+    border: none;
+    /* outline: none; */
+    color: #666;
+    width: 70%;
+    height: 20%;
+}
+
+
+
+header .form .submit{
+   
+    background-color: #FFF;
+    border: none;
+    color: #666;
+    width: 10%   ;
+    margin-left: 5PX;
+}
+
+
 
 main {
     margin: auto;
@@ -102,7 +135,7 @@ main section article{
     background-color: #fff;
     width: 100%;
     margin: 10px;
-
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
 }
 
 main section article img{
@@ -121,30 +154,6 @@ main section article i,
     margin-top: 10px;
 }
 
-/* .searchBar .form { */
-    /* text-align: center; */
-    /* width: 320px; */
-    
-/* } */
-
-
-/* .searchBar .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    padding: 2px;
-    text-align: center;
-    position:absolute; 
-    margin: 20px auto;
-    width: 260px; 
-} */
-
-/* .searchBar .form i{
-    background-color: white;
-    margin: 20px auto;
-    width: 20px;
-    padding: 1px;
-} */
 
 h2 {
     font-size: 24px;
@@ -207,7 +216,7 @@ footer section article i {
     margin: 30px 30px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 444px) {
     main section article .description {
       display: block;
     }
