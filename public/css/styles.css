@@ -28,13 +28,15 @@ div.top-header{
     display: flex;
     flex-direction: column;
     padding: 5%;
+    
 }
 
 .logo-bar-container{
     /* border: 3px solid gray; */
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
-    
+    margin-top: 10px;
 }
 
 header div.top-header p {
@@ -47,24 +49,38 @@ header div.logo{
     /* border: 3px solid pink; */
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    /* padding: 10px; */
     width: 50%;
 }
+
+div.search{
+    display: flex;
+    /* flex-direction: column; */
+    height: 100%;
+    width: 50%;
+    padding: -8px;
+    align-items: center;
+    margin-left: 10px;
+} 
 
 header div.form{
     
     /* border: 3px solid pink; */
     display: flex;
-    width: 50%;
-    height: 20%;
+    width: 100%;
+    height: 30%;
     align-items: center;
-    padding: 2px;
-    font-size: 11px;
+    padding: 8px;
+    font-size: 9px;
+    
 }
 
 .card-container{
    /*  border: 3px solid gray;  */
     text-align: center;
+    margin: auto;
+    width: auto;
+
 }
 
 header div.smenu{
@@ -105,33 +121,39 @@ header ul li a{
 
 .p1 {text-align: center;}
 
-header.form{
-    display: flex;
-}
+
 
 header .form .input{
-    
+    display: flex;
     background-color: #FFF;
     border: none;
     outline: none;
     color: #666;
-    width: 70%;
-    height: 20%;
+    width: 100%;
+    height: 50%;
+    border-radius: 5px 5px 5px 5px;
+    padding: 8px;
+   /*  justify-content: center; */
+    align-items: center;
+    overflow: hidden;
 }
 
 
 
 header .form .submit{
-   
-    background-color: #fff;
-    border: 1px solid #000;
+    display: flex;
+    background-color: white;
+    border: none;
     color: #666;
-    width: 10%;
+    padding: 6px;
+    margin-left: -23px;
+    border-radius: 5px 5px 5px 5px;
+    /* width: 15% */;
 }
 
-header .form .submit i{
-    width: 38px;
-}
+/* header .form .submit i{
+    width: 100%;
+} */
 
 main {
     
@@ -167,7 +189,7 @@ section.banner img{
 
 main section article{
     background-color: #fff;
-    width: 100%;
+    width: 92%;
     margin: 10px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100)
 }
@@ -180,13 +202,17 @@ main section article img{
 
 }
 
-
+main section article .price{
+    height: 30%;
+    margin-top: 10px;
+    width: 50%;
+}
 
 main section article i,
 .discount{
     color: #39b54a;
     margin-top: 10px;
-    width: 78%;
+    width: 50%;
 }
 
 main section article i {
@@ -221,6 +247,11 @@ p.descuento{
 .description {
   font-size: 16px;
   font-weight: normal;
+}
+
+h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 h3,
@@ -284,7 +315,14 @@ footer section article i {
     main section article {
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-  
+    
+    main section article .discount{
+    color: #39b54a;
+    margin-top: 10px;
+    width: 50%;
+    }
+
+
     main section div.products {
       display: flex;
       flex-direction: row;
@@ -307,6 +345,61 @@ footer section article i {
     main section div.products article {
       width: 22%;
     }
+
+    main section article .discount{
+        color: #39b54a;
+        margin-top: 10px;
+        width: 46%;
+        }
+
+        header nav{
+            font-size: 12px;
+            /* margin-left: 20px; */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            margin-left: -2px;
+            width: auto;
+        }
+
+
+        main section article .description {
+            width: 100%;
+          }
+
+          header div.smenu{
+            display: none;
+        }
+
+        header div.top-header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+            padding: 10px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+            padding: 10PX;
+        }
+
+        li{
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .logo{
+            padding: 0;
+            margin-right: 40px;
+        }
+
+        .logo-bar-container{
+           width: 40%;
+        }
   }
 
 
