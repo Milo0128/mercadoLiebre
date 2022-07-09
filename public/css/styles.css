@@ -191,7 +191,10 @@ main section article{
     background-color: #fff;
     width: 92%;
     margin: 10px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+    
+
 }
 
 main section article img{
@@ -260,7 +263,7 @@ h3,
 }
 
 .description {
-    /* display: none; */
+     
     margin-top: 20px;
   }
 
@@ -303,16 +306,99 @@ footer section article i {
 }
 
 .ultim {
-
-    margin: 30px 30px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
+.ultim p{
+    font-size: 15px;
+}
+
+/* Registro y login...............................................................................*/
+
+.btn,
+.btn-secondary {
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+}
+.btn {
+  background-color: #0044aa;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: #0022AA;
+}
+
+.btn-secondary {
+  background-color: #a1a1a1;
+}
+
+.form-register,
+.form-login {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-login input,
+.form-register input,
+.form-register .btn {
+  margin-bottom: 30px;
+}
+
+main input{
+    border-radius: 5px 5px 5px 5px;
+    border: 0;
+    padding: 5px;
+    margin: 10px
+}
+
+.register h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input:invalid {
+    border: 5px solid red;
+  }
+
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #C00000;
+  }
+
+/* Termina Registro y Login................................................................................... */
+
 @media (min-width: 444px) {
-    main section article .description {
-      display: block;
+    
+    .description{
+        display: none;
+    }
+
+    main section article:hover .description{
+        display: initial;
+        opacity: 1;
+        transition: 2s;
+    }
+    
+    main section article:hover i{
+        transform: rotate(270deg);
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px white;
     }
   
-    main section article {
+    main section article:hover {
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
@@ -357,7 +443,7 @@ footer section article i {
             /* margin-left: 20px; */
             display: flex;
             justify-content: space-between;
-            margin-bottom: 10px;
+            margin-bottom: -2px;
             margin-left: -2px;
             width: auto;
         }
@@ -384,21 +470,31 @@ footer section article i {
         ul{
             display: flex;
             justify-content: space-around;
-            padding: 10PX;
+            padding: 14PX;
         }
 
         li{
-            padding: 10px;
+            padding: 14px;
             font-size: 18px;
         }
 
         .logo{
             padding: 0;
-            margin-right: 40px;
+            /* margin-right: 40px; */
+            margin: auto;
+            padding: 24px;
         }
 
         .logo-bar-container{
-           width: 40%;
+           width: 60%;
+        }
+        
+        .search{
+            width: 70%;
+        }
+        
+        .info{
+            display: flex;
         }
   }
 

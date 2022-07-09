@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Register</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -64,61 +64,11 @@
             </div>
         </div>
     </header>
-    <main class="register">
-        <form action="/" method="POST" class="form-register">
-            <input type="text" name="name" placeholder="Nombre y apellido">
+    <main class="login">
+        <form action="/" method="POST" class="form-login">
             <input type="text" name="user" placeholder="Nombre de usuario">
-            <input type="email" name="email" placeholder="E-mail">
-            <br>
-            <label for="birth_date"><b>Fecha de nacimiento</b></label>
-            <br>
-            <input type="date" name="birth_date" id="birth_date">
-            <br>
-            <input type="text" name="addres" placeholder="Domicilio">
-            <h4>Perfil del usuario</h4>
-            <div class="profile">
-                <input type="radio" name="profile" value="buy" id="buy">
-                <label for="buy">Comprador</label>
-                <input type="radio" name="profile" value="sell" id="sell">
-                <label for="sell">Vendedor</label>
-            </div>
-
-            <h4>Intereses</h4>
-            <div class="interests">
-                <div>
-                    <input type="checkbox" name="interests" value="a" id="a">
-                    <label for="a">Electro</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="interests" value="b" id="b">
-                    <label for="b">Moda</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="interests" value="c" id="c">
-                    <label for="c">Hogar</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="interests" value="d" id="d">
-                    <label for="d">Juguetería</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="interests" value="e" id="e">
-                    <label for="e">Vida sana</label>
-                </div>
-            </div>
-
-            <h4>Elegí tu foto de usuario</h4>
-            <input type="file" name="avatar">
-            <br>
-            <br>
             <input type="password" name="pass" placeholder="Elegí tu contraseña">
-            <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-            <br>
-            <br>
             <button class="btn" type="submit">Enviar</button>
-            <button class="btn-secondary" type="reset">Borrar</button>
-            <br>
-            <br>
         </form>
     </main>
     <footer>
