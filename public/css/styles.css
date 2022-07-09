@@ -315,6 +315,9 @@ footer section article i {
     font-size: 15px;
 }
 
+footer section article i:hover{
+    color: #39b54a;
+}
 /* Registro y login...............................................................................*/
 
 .btn,
@@ -378,7 +381,7 @@ input:invalid {
 
 /* Termina Registro y Login................................................................................... */
 
-@media (min-width: 444px) {
+@media (min-width: 361px) {
     
     .description{
         display: none;
