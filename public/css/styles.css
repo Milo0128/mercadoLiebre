@@ -394,7 +394,7 @@ input:invalid {
 
 /* Termina Registro y Login................................................................................... */
 
-@media (min-width: 361px) {
+@media (min-width: 445px) {
     
     .description{
         display: none;
